@@ -1,0 +1,32 @@
+language: go
+go:
+    - 1.4
+
+env:
+    global:
+
+notifications:
+
+services:
+
+before_install:
+    - echo -e "[url \"git@github.com:\"]\n  insteadOf = https://github.com/" >> ~/.gitconfig
+
+install:
+    - ./install.sh
+      #echo ""
+    # - make setup-test
+
+#before_script:
+    #echo "Todo: make test"
+    #- make test
+
+script:
+    - pwd
+      #- ls
+      #- make linux-amd64
+
+branches:
+    only:
+    - master
+
