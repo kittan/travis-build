@@ -23,7 +23,7 @@ install:
 
 script:
     - pwd
-      #- ls
+    - ls -lt /usr/local/include
       #- make linux-amd64
 
 branches:
